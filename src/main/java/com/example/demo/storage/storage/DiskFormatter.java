@@ -1,4 +1,4 @@
-package com.example.demo.storage.distkstorage;
+package com.example.demo.storage.storage;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;

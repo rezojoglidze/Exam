@@ -1,8 +1,7 @@
-package com.example.demo.storage.distkstorage;
+package com.example.demo.storage.storage;
 
 import com.example.demo.storage.Storage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
