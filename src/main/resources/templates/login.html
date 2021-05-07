@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form action="/login" method="post">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="Submit">
+</form>
+<h1 style="color: blue;">Exam</h1>
+<p th:text="'Hello, ' + ${hello.hello1} + '!'"/>
+<p th:if="${hello.hello1.equals('helloA')}">Hidden or not</p>
+</body>
+</html>
