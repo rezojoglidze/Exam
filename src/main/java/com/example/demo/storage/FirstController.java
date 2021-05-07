@@ -8,12 +8,12 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-public class WelcomeController {
+public class FirstController {
 
   @GetMapping("/login")
   public ModelAndView hello() {
     ModelAndView modelAndView = new ModelAndView("login");
-    modelAndView.addObject("hello", new Hello("helloA", "HelloB"));
+    modelAndView.addObject("user", new User("rezo", "joglidze"));
     return modelAndView;
   }
 
@@ -37,29 +37,4 @@ public class WelcomeController {
     return "redirect:login";
   }
 
-  class Hello {
-    private String hello1;
-    private String hello2;
-
-    public Hello(String hello1, String hello2) {
-      this.hello1 = hello1;
-      this.hello2 = hello2;
-    }
-
-    public String getHello1() {
-      return hello1;
-    }
-
-    public void setHello1(String hello1) {
-      this.hello1 = hello1;
-    }
-
-    public String getHello2() {
-      return hello2;
-    }
-
-    public void setHello2(String hello2) {
-      this.hello2 = hello2;
-    }
-  }
 }
